@@ -3,7 +3,7 @@ RUN TINI_VERSION="v0.13.2" \
     && TINI_REAL_VERSION="0.13.2" \
     && TINI_BUILD="/tmp/tini" \
     && echo "Installing build dependencies" \
-    && TINI_DEPS="build-essential cmake curl git hardening-includes libcap-dev python-dev rpm" \
+    && TINI_DEPS="build-essential cmake curl git hardening-includes libcap-dev python-dev rpm vim" \
     && apt-get update \
     && apt-get install --yes ${TINI_DEPS} \
     && echo "Building Tini" \
